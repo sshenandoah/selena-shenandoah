@@ -1,9 +1,107 @@
-<!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Your Name</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">Your Name</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="architecture/index.html">Architecture</a></li>
+        <li><a href="art/index.html">Art</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Résumé</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <span class="label">Portfolio</span>
+        <h1>Architecture &amp;<br><em>Art</em></h1>
+        <div class="divider"></div>
+        <p>
+          Designer, architect, and artist working at the intersection of space,
+          structure, and visual culture. Based in [City].
+        </p>
+        <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+          <a class="btn" href="work.html">View Work</a>
+          <a class="btn btn-ghost" href="about.html">About Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured sections -->
+    <section class="section">
+      <div class="container">
+        <span class="label">Selected Work</span>
+        <h2>Portfolios</h2>
+        <div class="divider"></div>
+        <div class="grid-2">
+
+          <div class="card">
+            <div class="card-img">[ Architecture Image ]</div>
+            <div class="card-body">
+              <h3>Architecture</h3>
+              <p>Built environments, spatial studies, and architectural projects spanning urban and site-specific contexts.</p>
+              <a class="card-link" href="architecture/index.html">View Portfolio →</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">[ Art Image ]</div>
+            <div class="card-body">
+              <h3>Art</h3>
+              <p>Photography, drawing, and mixed-media work exploring place, memory, and material culture.</p>
+              <a class="card-link" href="art/index.html">View Portfolio →</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">[ Work Image ]</div>
+            <div class="card-body">
+              <h3>Work</h3>
+              <p>Professional projects, collaborations, and studio work across disciplines and scales.</p>
+              <a class="card-link" href="work.html">View Work →</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">[ Portrait ]</div>
+            <div class="card-body">
+              <h3>About</h3>
+              <p>Background, education, interests, and the ideas that shape my practice.</p>
+              <a class="card-link" href="about.html">Learn More →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-wrap -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="resume.html">Résumé</a></li>
+        <li><a href="about.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
 </html>
